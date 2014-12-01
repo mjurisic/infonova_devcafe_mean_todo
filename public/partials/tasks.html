@@ -1,0 +1,24 @@
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default" ng-class="{true:'panel-success'}[task.done]" ng-repeat="task in app.tasks" ng-click="app.showDetails(task)" ng-animate=" 'animate' ">
+        <div class="panel-heading">
+            <h4 class="panel-title">{{task.title}}
+                <a href="#task">
+                    <span class="glyphicon glyphicon-edit pull-right" ng-click="app.editTask=task">
+
+                    </span>
+                </a>
+            </h4>
+
+        </div>
+        <div class="panel-collapse collapse in" ng-show="task.show">
+            <div class="panel-body">
+                <div class="glyphicon glyphicon-remove pull-right" ng-click="app.deleteTask(task)"></div>
+                <div>{{task.text}}</div>
+                <div>{{task.due | date}}</div>
+                <button class="btn btn-success pull-right" ng-hide="task.done" ng-click="app.setDone(task, true)">Mark as done</button>
+                <button class="btn btn-warning pull-right" ng-show="task.done" ng-click="app.setDone(task, false)">Mark as undone</button>
+            </div>
+        </div>
+    </div>
+</div>
+

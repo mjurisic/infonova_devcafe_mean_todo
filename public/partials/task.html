@@ -1,0 +1,16 @@
+<form role="form">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input id="title" class="form-control" ng-model="app.editTask.title" name="title" title/>
+    </div>
+    <div class="form-group">
+        <label for="text">Text:</label>
+        <textarea id="text" class="form-control" ng-model="app.editTask.text" rows="6"></textarea> <br/>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-default" ng-click="app.saveTask(app.editTask)">SAVE</button>
+        <a href="#tasks">
+            <button class="btn btn-default" ng-click="app.initNewTask()">CANCEL</button>
+        </a>
+    </div>
+</form>

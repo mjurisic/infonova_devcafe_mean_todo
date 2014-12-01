@@ -1,0 +1,29 @@
+{
+  "name": "MeanTodo",
+  "version": "1.0.0",
+  "description": "A showcase demonstrating mean stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://markojurisic@bitbucket.org/markojurisic/meantodolist.git"
+  },
+  "keywords": [
+    "mean",
+    "mongodb",
+    "angular",
+    "express",
+    "nodejs"
+  ],
+  "author": "Marko Jurisic",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "express": "^4.10.4",
+    "mongoose": "^3.8.19"
+  },
+  "devDependencies": {}
+}
